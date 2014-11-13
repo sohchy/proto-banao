@@ -8,8 +8,14 @@
     <script src="js/vendor/modernizr.js"></script>
     <style type="text/css">
       body {font-family: 'Covered By Your Grace', cursive;}
-      footer {background: #D1D2D4}
+      h1, h2, h3, h4, h5, h6 {font-family: 'Covered By Your Grace', cursive;}
+      button, .button {font-family: 'Covered By Your Grace', cursive;}
+      footer {background: #D1D2D4; margin-top: 100px;}
       .icon {width:3.5rem;height: 3.5rem;}
+      .icon:hover {
+        background-image: url(img/icon-hover.svg);
+      }
+      .icon-social {width:1.75rem; height: 1.75rem; margin: 10px;}
 
       .tabs dd > a, .tabs .tab-title > a {
         padding: 1rem 1rem;
@@ -17,7 +23,6 @@
       }
       .tabs dd > a:hover, .tabs .tab-title > a:hover {
         background-color: transparent;
-        background-image: url(img/icon-hover.svg);
         background-repeat: no-repeat;
         background-size: 3.5rem;
         background-position: center;
@@ -27,16 +32,16 @@
     <link href='http://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
   </head>
   <body>
-  <?php include_once("img/svg-symbols.svg"); ?>
+  <?php include_once("img/svg-icons.svg"); ?>
     <nav class="clearfix">
       <h1 class="left">Project Title</h1>
-      <a href="#" class="button right">Other Projects</a>
+      <a href="index.php#projects" class="button right">Other Projects</a>
       <a href="#" class="button right">Get in Touch</a>
     </nav>
 
     <nav class="clearfix">
-      <i class="left">left</i>
-      <div class="row center">
+      <svg class="left icon"><use xlink:href="#icon-back" /></svg>
+      <div class="row left text-center">
         <div class="large-12 columns">
           <dl class="tabs" data-tab>
             <dd class="active">
@@ -87,7 +92,7 @@
           </dl>
         </div>
       </div>
-      <i class="right">right</i>
+      <svg class="icon right"><use xlink:href="#icon-next" /></svg>
     </nav>
 
     <div class="row">
@@ -148,31 +153,133 @@
             </div>
             <div class="large-6 columns">
               <div class="your-class">
-             
+                <div><img src="http://placehold.it/600x600"></div>
+                <div><img src="http://placehold.it/600x600"></div>
+                <div><img src="http://placehold.it/600x600"></div>
               </div> 
             </div>
           </div>
         </div>
-        <div class="content" id="architecture">
-          <p>architecture...</p>
-        </div>
+
         <div class="content" id="messaging">
-          <p>messaging...</p>
+          <div class="row">
+            <div class="large-6 columns">
+              <h2>messaging</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="large-6 columns">
+              <div class="your-class">
+                <div><img src="http://placehold.it/600x600"></div>
+                <div><img src="http://placehold.it/600x600"></div>
+                <div><img src="http://placehold.it/600x600"></div>
+              </div> 
+            </div>
+          </div>
         </div>
         <div class="content" id="sketch">
-          <p>sketch...</p>
+          <div class="row">
+            <div class="large-6 columns">
+              <h2>sketch</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="large-6 columns">
+              <div class="your-class">
+                <div><img src="http://placehold.it/600x600"></div>
+                <div><img src="http://placehold.it/600x600"></div>
+                <div><img src="http://placehold.it/600x600"></div>
+              </div> 
+            </div>
+          </div>
         </div>
         <div class="content" id="mock-up">
-          <p>mock-up...</p>
+          <div class="row">
+            <div class="large-6 columns">
+              <h2>mock-up</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="large-6 columns">
+              <div class="your-class">
+                <div><img src="http://placehold.it/600x600"></div>
+                <div><img src="http://placehold.it/600x600"></div>
+                <div><img src="http://placehold.it/600x600"></div>
+              </div> 
+            </div>
+          </div>
         </div>
         <div class="content" id="code">
-          <p>code...</p>
+          <div class="row">
+            <div class="large-6 columns">
+              <h2>code</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="large-6 columns">
+              <div class="your-class">
+                <div><img src="http://placehold.it/600x600"></div>
+                <div><img src="http://placehold.it/600x600"></div>
+                <div><img src="http://placehold.it/600x600"></div>
+              </div> 
+            </div>
+          </div>
         </div>
         <div class="content" id="enhance">
-          <p>enhance...</p>
+          <div class="row">
+            <div class="large-6 columns">
+              <h2>enhance</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="large-6 columns">
+              <div class="your-class">
+                <div><img src="http://placehold.it/600x600"></div>
+                <div><img src="http://placehold.it/600x600"></div>
+                <div><img src="http://placehold.it/600x600"></div>
+              </div> 
+            </div>
+          </div>
         </div>
         <div class="content" id="user-testing">
-          <p>user-testing...</p>
+          <div class="row">
+            <div class="large-6 columns">
+              <h2>user testing</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+              proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+            <div class="large-6 columns">
+              <div class="your-class">
+                <div><img src="http://placehold.it/600x600"></div>
+                <div><img src="http://placehold.it/600x600"></div>
+                <div><img src="http://placehold.it/600x600"></div>
+              </div> 
+            </div>
+          </div>
         </div>
         </div>
 
@@ -182,13 +289,11 @@
     
 
     <footer class="text-center">
-      facebook twitter linkedin rss
+      <svg class="icon-social"><use xlink:href="#icon-facebook" /></svg>
+      <svg class="icon-social"><use xlink:href="#icon-twitter" /></svg>
+      <svg class="icon-social"><use xlink:href="#icon-linkedin" /></svg>
+      <svg class="icon-social"><use xlink:href="#icon-rss" /></svg>
     </footer>
-
-
-
-
-<svg class="icon"><use xlink:href="#fish" /></svg>
 
     
     <script src="js/vendor/jquery.js"></script>

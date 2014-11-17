@@ -6,30 +6,10 @@
     <title>Foundation | Welcome</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <script src="js/vendor/modernizr.js"></script>
-    <style type="text/css">
-      body {font-family: 'Covered By Your Grace', cursive;}
-      h1, h2, h3, h4, h5, h6 {font-family: 'Covered By Your Grace', cursive;}
-      button, .button {font-family: 'Covered By Your Grace', cursive;}
-      footer {background: #D1D2D4; margin-top: 100px;}
-      .icon {width:3.5rem;height: 3.5rem;}
-      .icon:hover {
-        background-image: url(img/icon-hover.svg);
-      }
-      .icon-social {width:1.75rem; height: 1.75rem; margin: 10px;}
-
-      .tabs dd > a, .tabs .tab-title > a {
-        padding: 1rem 1rem;
-        background-color: transparent;
-      }
-      .tabs dd > a:hover, .tabs .tab-title > a:hover {
-        background-color: transparent;
-        background-repeat: no-repeat;
-        background-size: 3.5rem;
-        background-position: center;
-      }
-    </style>
     <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/jquery.slick/1.3.13/slick.css"/>
     <link href='http://fonts.googleapis.com/css?family=Covered+By+Your+Grace' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="css/proto-banao.css"/>
+
   </head>
   <body>
   <?php include_once("img/svg-icons.svg"); ?>

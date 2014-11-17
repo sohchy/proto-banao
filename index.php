@@ -15,7 +15,7 @@
   <body>
     <?php include_once("img/svg-icons.svg"); ?>
 
-    <a href="#" class="button right">Get in Touch</a>
+    <a href="#get-in-touch" class="button right">Get in Touch</a>
     <div class="row">
       <h1 class="text-center">
         <img class="logo" src="img/proto-bano.svg">
@@ -25,13 +25,13 @@
 
     <div class="project">
       <div class="row">
-        <div class="large-3 medium-3 large-offset-1 columns">
+        <div class="large-3 medium-4 large-offset-1 columns">
           <img class="vertical-center-later" src="img/project-sketch-name.svg">
         </div>
         <div class="large-2 large-offset-1 medium-2 medium-offset-1 columns">
           <img class="vertical-center-later-also" src="img/arrow.svg">
         </div>
-        <div class="large-3 medium-3 large-offset-1 columns end">
+        <div class="large-3 medium-4 medium-offset-1 large-offset-1 columns end">
           <img src="img/project-preview-name.svg">
         </div>
       </div>
@@ -41,13 +41,13 @@
 
     <div class="project">
       <div class="row">
-        <div class="large-3 medium-3 large-offset-1 columns">
+        <div class="large-3 medium-4 large-offset-1 columns">
           <img class="vertical-center-later" src="img/project-sketch-name.svg">
         </div>
         <div class="large-2 large-offset-1 medium-2 medium-offset-1 columns">
           <img class="vertical-center-later-also" src="img/arrow.svg">
         </div>
-        <div class="large-3 medium-3 large-offset-1 columns end">
+        <div class="large-3 medium-4 medium-offset-1 large-offset-1 columns end">
           <img src="img/project-preview-name.svg">
         </div>
       </div>
@@ -56,13 +56,13 @@
 
     <div class="project">
       <div class="row">
-        <div class="large-3 medium-3 large-offset-1 columns">
+        <div class="large-3 medium-4 large-offset-1 columns">
           <img class="vertical-center-later" src="img/project-sketch-name.svg">
         </div>
         <div class="large-2 large-offset-1 medium-2 medium-offset-1 columns">
           <img class="vertical-center-later-also" src="img/arrow.svg">
         </div>
-        <div class="large-3 medium-3 large-offset-1 columns end">
+        <div class="large-3 medium-4 medium-offset-1 large-offset-1 columns end">
           <img src="img/project-preview-name.svg">
         </div>
       </div>
@@ -71,13 +71,13 @@
 
     <div class="project">
       <div class="row">
-        <div class="large-3 medium-3 large-offset-1 columns">
+        <div class="large-3 medium-4 large-offset-1 columns">
           <img class="vertical-center-later" src="img/project-sketch-name.svg">
         </div>
         <div class="large-2 large-offset-1 medium-2 medium-offset-1 columns">
           <img class="vertical-center-later-also" src="img/arrow.svg">
         </div>
-        <div class="large-3 medium-3 large-offset-1 columns end">
+        <div class="large-3 medium-4 medium-offset-1 large-offset-1 columns end">
           <img src="img/project-preview-name.svg">
         </div>
       </div>
@@ -85,25 +85,20 @@
     </div>
 
 
-    <form>
+    <form id="get-in-touch">
       <div class="row">
-        <div class="large-12 columns">
-          <label>
-            <input type="text" placeholder="Email Address" />
-          </label>
+        <div class="small-12 large-7 large-centered columns">
+            <input type="email" placeholder="Email Address" />
+            <img src="img/rule.svg">
         </div>
         <div class="row">
-          <div class="large-12 columns">
-            <label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </label>
+          <div class="small-12 large-6 large-centered columns">
+              <input type="text" placeholder="Let's get in touch." />
           </div>
         </div>
         <div class="row">
-          <div class="large-12 columns">
-            <label>
-              <input type="submit" value="send">
-            </label>
+          <div class="small-12 large-1 large-centered columns">
+              <input type="image" src="img/icon-send.svg" border="0" alt="Submit" />
           </div>
         </div>
       </div>

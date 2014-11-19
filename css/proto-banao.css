@@ -1,9 +1,10 @@
 body, h1, h2, h3, h4, h5, h6, button, .button {font-family: 'Covered By Your Grace', cursive; color:#404041;}
-body {
-  font-size: 1.8rem;
+p {
+  font-size: 1.6rem;
+  letter-spacing: .1rem;
 }
 
-.logo {width: 60%; margin: 20% 0 25%;}
+.logo {width: 40%; margin: 12% auto 0; }
 
 .project {background: #3BB9A5; padding: 40px 0; position: relative; height: auto; 
 
@@ -27,6 +28,23 @@ body {
   background-repeat: no-repeat;
   background-size: 3.5rem;
   background-position: center;
+}
+
+button, .button{
+border-radius: 1.5rem;
+padding: .2rem 1.3rem;
+color: white;
+font-size: 1.4rem;
+text-transform: uppercase;
+letter-spacing: .15rem;
+background: rgba(47, 168, 205, .3);
+margin:1rem;
+}
+button:hover, button:focus, .button:hover, .button:focus {
+background-color: rgba(47, 168, 205, 1);
+}
+a:hover, a:focus {
+color: #2fa8cd;
 }
 
 .vertical-center-later {padding-top:45px;}
@@ -114,3 +132,115 @@ input[type=text]::-webkit-input-placeholder {
 input[type=image] {
 margin-top: 30px;
 }
+
+
+/* scroll arrow */
+#top-header {
+  height: 100%;
+  text-align: center;
+  clear: both;
+}
+
+.intro-arrow {
+  position: absolute;
+  bottom: 0;
+  left: 49%;
+  opacity: 0;
+  -webkit-animation: fadein 2s;
+  -moz-animation: fadein 2s;
+  -o-animation: fadein 2s;
+  animation: fadein 2s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.intro-arrow.hidden {
+  -webkit-animation: fadeOut 1s;
+  -moz-animation: fadeOut 1s;
+  -o-animation: fadeOut 1s;
+  animation: fadeOut 1s;
+}
+.intro-arrow:hover a {
+  opacity: .7;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    bottom: 1.5em;
+  }
+}
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    bottom: 1.5em;
+  }
+}
+@-o-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    bottom: 1.5em;
+  }
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    bottom: 1.5em;
+  }
+}
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    bottom: -1.5em;
+  }
+}
+@-moz-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    bottom: -1.5em;
+  }
+}
+@-o-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    bottom: -1.5em;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    bottom: -1.5em;
+  }
+}
+body, html {
+  height: 100%;
+
+}
+
+
+

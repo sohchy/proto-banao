@@ -18,81 +18,32 @@
     <a href="#get-in-touch" class="button right contact">Get in Touch</a>
     
 
-<header id="top-header" role="banner">
-  <h1>
-    <img src="img/proto-banao.svg" class="logo">
-  </h1>
-  <div class="intro-arrow">
-    <a href="#main-content">
-      <img src="img/scroll-arrow.svg" width="50px" alt="down arrow">
-    </a>
-  </div>
-</header>
+    <header id="top-header" role="banner">
+      <h1>
+        <img src="img/proto-banao.svg" class="logo">
+      </h1>
+      <div class="intro-arrow">
+        <a href="#main-content">
+          <img src="img/scroll-arrow.svg" width="50px" alt="down arrow">
+        </a>
+      </div>
+    </header>
     
     <main id="main-content">
       <div role="main">
 
-      <div class="project">
-      <div class="row">
-        <div class="large-3 medium-4 large-offset-1 columns">
-          <img class="vertical-center-later" src="img/project-sketch-name.svg">
+        <div class="project" data-interchange="[project-small.html, (small)], [project.html, (medium)], [project.html, (large)]">
+          
         </div>
-        <div class="large-2 large-offset-1 medium-2 medium-offset-1 columns">
-          <img class="vertical-center-later-also" src="img/arrow.svg">
-        </div>
-        <div class="large-3 medium-4 medium-offset-1 large-offset-1 columns end">
-          <img src="img/project-preview-name.svg">
-        </div>
-      </div>
-      <span class="text-content"><span>Project Name</span></span>
-      </div>
 
-
-      <div class="project">
-        <div class="row">
-          <div class="large-3 medium-4 large-offset-1 columns">
-            <img class="vertical-center-later" src="img/project-sketch-name.svg">
-          </div>
-          <div class="large-2 large-offset-1 medium-2 medium-offset-1 columns">
-            <img class="vertical-center-later-also" src="img/arrow.svg">
-          </div>
-          <div class="large-3 medium-4 medium-offset-1 large-offset-1 columns end">
-            <img src="img/project-preview-name.svg">
-          </div>
+        <div class="project" data-interchange="[project-small.html, (small)], [project.html, (medium)], [project.html, (large)]">
         </div>
-        <span class="text-content"><span>Project Name</span></span>
-      </div>
 
-      <div class="project">
-        <div class="row">
-          <div class="large-3 medium-4 large-offset-1 columns">
-            <img class="vertical-center-later" src="img/project-sketch-name.svg">
-          </div>
-          <div class="large-2 large-offset-1 medium-2 medium-offset-1 columns">
-            <img class="vertical-center-later-also" src="img/arrow.svg">
-          </div>
-          <div class="large-3 medium-4 medium-offset-1 large-offset-1 columns end">
-            <img src="img/project-preview-name.svg">
-          </div>
+        <div class="project" data-interchange="[project-small.html, (small)], [project.html, (medium)], [project.html, (large)]">
         </div>
-        <span class="text-content"><span>Project Name</span></span>
-      </div>
 
-      <div class="project">
-        <div class="row">
-          <div class="large-3 medium-4 large-offset-1 columns">
-            <img class="vertical-center-later" src="img/project-sketch-name.svg">
-          </div>
-          <div class="large-2 large-offset-1 medium-2 medium-offset-1 columns">
-            <img class="vertical-center-later-also" src="img/arrow.svg">
-          </div>
-          <div class="large-3 medium-4 medium-offset-1 large-offset-1 columns end">
-            <img src="img/project-preview-name.svg">
-          </div>
+        <div class="project" data-interchange="[project-small.html, (small)], [project.html, (medium)], [project.html, (large)]">
         </div>
-        <span class="text-content"><span>Project Name</span></span>
-      </div>
-
 
       <form id="get-in-touch">
         <div class="row">
@@ -125,6 +76,7 @@
     
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
+    <script src="js/foundation/foundation.interchange.js"></script>
     <script>
       $(document).foundation();
     </script>

@@ -1,7 +1,16 @@
-body, h1, h2, h3, h4, h5, h6, button, .button {font-family: 'Covered By Your Grace', cursive; color:#404041;}
+body, h1, h2, h3, h4, h5, h6, button, .button {font-family: 'Covered By Your Grace', cursive; color:white;}
+
 p {
   font-size: 1.6rem;
   letter-spacing: .1rem;
+  color:#404041;
+}
+
+h2 {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  font-size: 3rem;
 }
 
 .logo {width: 40%; margin: 12% auto 0; }

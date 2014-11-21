@@ -18,7 +18,7 @@
     <a href="#get-in-touch" class="button right contact">Get in Touch</a>
     
 
-    <header id="top-header" role="banner">
+    <header id="top-header" class="flex-center" role="banner">
       <h1>
         <img src="img/proto-banao.svg" class="logo">
       </h1>
@@ -33,7 +33,6 @@
       <div role="main">
 
         <div class="project" data-interchange="[project-small.html, (small)], [project.html, (medium)], [project.html, (large)]">
-          
         </div>
 
         <div class="project" data-interchange="[project-small.html, (small)], [project.html, (medium)], [project.html, (large)]">
@@ -45,33 +44,33 @@
         <div class="project" data-interchange="[project-small.html, (small)], [project.html, (medium)], [project.html, (large)]">
         </div>
 
-      <form id="get-in-touch">
-        <div class="row">
-          <div class="small-12 large-7 large-centered columns">
-              <input type="email" placeholder="Email Address" />
-              <img src="img/rule.svg">
-          </div>
+        <form id="get-in-touch">
           <div class="row">
-            <div class="small-12 large-7 large-centered columns">
-              <p>Let&rsquo;s get in touch.<p>
+            <div class="small-12 large-7 small-centered columns">
+                <input type="email" placeholder="Email Address" />
+                <img src="img/rule.svg">
+            </div>
+            <div class="row">
+              <div class="small-12 large-7 small-centered columns">
+                <p>Let&rsquo;s get in touch.<p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="small-12 large-1 small-centered columns">
+                  <input type="image" src="img/icon-send.svg" border="0" alt="Submit" />
+              </div>
             </div>
           </div>
-          <div class="row">
-            <div class="small-12 large-1 large-centered columns">
-                <input type="image" src="img/icon-send.svg" border="0" alt="Submit" />
-            </div>
-          </div>
-        </div>
-      </form>
-    
-    </div>
-  </main>
+        </form>
+      
+      </div>
+    </main>
 
     <footer class="text-center">
-      <svg class="icon-social"><use xlink:href="#icon-facebook" /></svg>
-      <svg class="icon-social"><use xlink:href="#icon-twitter" /></svg>
-      <svg class="icon-social"><use xlink:href="#icon-linkedin" /></svg>
-      <svg class="icon-social"><use xlink:href="#icon-rss" /></svg>
+      <a><svg class="icon-social"><use xlink:href="#icon-facebook" /></svg></a>
+      <a><svg class="icon-social"><use xlink:href="#icon-twitter" /></svg></a>
+      <a><svg class="icon-social"><use xlink:href="#icon-linkedin" /></svg></a>
+      <a><svg class="icon-social"><use xlink:href="#icon-rss" /></svg></a>
     </footer>
     
     <script src="js/vendor/jquery.js"></script>
@@ -105,6 +104,23 @@
       function scrollTo(x){
         $("html,body").animate({scrollTop: $(x).offset().top},'slow');
       }
+
+      $(document).ready(function(){
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+
+
     </script>
   </body>
 </html>

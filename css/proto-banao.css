@@ -13,12 +13,66 @@ h2 {
   font-size: 3rem;
 }
 
-.logo {width: 40%; margin: 12% auto 0; }
+header h1{width: 100%}
+.logo {max-width: 500px;
+margin: 0 auto;
+margin-top: -125px;}
 
-.project {background: #3BB9A5; padding: 40px 0; position: relative; height: auto; 
-
+.project {
+  background: #3BB9A5; 
+  padding: 40px 0; 
+  position: relative;
 }
-.project:hover { transition: all .2s;}
+
+.flex-center {
+  display: -webkit-flexbox;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  text-align: center;
+}
+
+.text-content {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background: rgba(59, 185, 165, .8);
+  opacity: 0;
+}
+
+.text-content span {
+  text-transform: uppercase;
+  margin: 0 auto;
+  max-width: 62.5em;
+}
+
+.text-content h2 {
+  font-size: 3.5rem;
+}
+
+.text-content p {
+  color: white;
+  font-size: 2rem;
+  letter-spacing: .25rem;
+}
+
+.project:nth-of-type(3n) span.text-content {
+  background: rgba(251, 175, 63, .8);
+}
+.project:nth-of-type(3n+1) span.text-content {
+  background: rgba(0, 99, 122, .8);
+}
+.project:hover span.text-content {
+  opacity: 1;
+}
+span.text-content {
+  transition: opacity 300ms ease-out;
+}
 .project:nth-of-type(3n) {background: #FBAF3F;}
 .project:nth-of-type(3n+1) {background: #00637A;}
 
@@ -56,46 +110,21 @@ a:hover, a:focus {
 color: #2fa8cd;
 }
 
-.vertical-center-later {padding-top:45px;}
-.vertical-center-later-also {padding-top: 170px;}
 
-span {
-font-size: 8.5rem;
-}
 
-span.text-content span {
-display: table-cell;
-text-align: center;
-vertical-align: middle;
-}
 
-span.text-content {
-background: rgba(255,255,255,0.5);
-color: #3BB9A5;
-cursor: pointer;
-display: table;
-height: 700px;
-left: 0;
-position: absolute;
-top: 0;
-width: 100%;
-opacity: 0;
-}
 
-.project:nth-of-type(3n) span.text-content {
-  color: #FBAF3F;
-}
-.project:nth-of-type(3n+1) span.text-content {
-  color: #00637A;
-}
 
-.project:hover span.text-content {
-opacity: 1;
-}
 
 
 footer {background: #D1D2D4; margin-top: 100px;}
-
+footer a {
+  opacity: 1;
+  transition: opacity 300ms ease-out;
+}
+footer a:hover {
+  opacity: .4;
+}
 
 
 form {
@@ -108,8 +137,6 @@ input, textarea {
   margin-bottom: 15px;
 }
 
-
-
 input[type=email] {
   font-family: 'Covered By Your Grace', cursive;
   font-size: 3.5rem;
@@ -119,27 +146,22 @@ input[type=email] {
   width: 100%;
 }
 
-
-input[type=text] {
-  font-family: 'Covered By Your Grace', cursive;
-  font-size: 1.3rem;
-  margin: 10px 0 0 -25px;
-  border: 0;
-  outline: none;
-  width: 100%;
-}
-
 input[type=email]::-webkit-input-placeholder {
   color: #d1d2d4;
 }
 
-input[type=text]::-webkit-input-placeholder {
-  color: #404041;
+input[type=image] {
+margin-top: 30px;
+opacity: .3;
+transition: opacity 300ms ease-out;
+}
+input[type=image]:hover {
+opacity: 1;
 }
 
 
-input[type=image] {
-margin-top: 30px;
+form p {
+  margin-left: 22px;
 }
 
 
@@ -245,10 +267,6 @@ margin-top: 30px;
     opacity: 0;
     bottom: -1.5em;
   }
-}
-body, html {
-  height: 100%;
-
 }
 
 

@@ -1,16 +1,34 @@
-body, h1, h2, h3, h4, h5, h6, button, .button {font-family: 'Covered By Your Grace', cursive; color:white;}
+body, p, h1, h2, h3, h4, h5, h6, button, .button {font-family: 'Covered By Your Grace', cursive; color:#404041;}
+
+button, .button {
+  color:white;
+}
 
 p {
   font-size: 1.6rem;
   letter-spacing: .1rem;
-  color:#404041;
 }
 
-h2 {
-  color: white;
+nav {
+  padding-left:20px;
+}
+
+h1 {
+font-size: 3.25rem;
+letter-spacing: .25rem;
+line-height: 5rem;
+}
+
+.project h2 {
   text-transform: uppercase;
   letter-spacing: .2rem;
   font-size: 3rem;
+}
+
+h2 {
+letter-spacing: .2rem;
+font-size: 2.5rem;
+margin-bottom: 1.5rem;
 }
 
 header h1{width: 100%}
@@ -52,6 +70,7 @@ margin-top: -125px;}
 }
 
 .text-content h2 {
+  color: white;
   font-size: 3.5rem;
 }
 
@@ -76,9 +95,12 @@ span.text-content {
 .project:nth-of-type(3n) {background: #FBAF3F;}
 .project:nth-of-type(3n+1) {background: #00637A;}
 
-.icon {width:3.5rem;height: 3.5rem;}
+.icon {width: 4rem;
+height: 4rem;
+padding: 0 .3rem;}
 .icon:hover {
-  background-image: url(img/icon-hover.svg);
+  background-image: url(../img/icon-hover.svg);
+  background-repeat: no-repeat;
 }
 .icon-social {width:1.75rem; height: 1.75rem; margin: 10px;}
 
@@ -117,7 +139,7 @@ color: #2fa8cd;
 
 
 
-footer {background: #D1D2D4; margin-top: 100px;}
+footer {background: #D1D2D4; margin-top: 125px;}
 footer a {
   opacity: 1;
   transition: opacity 300ms ease-out;
@@ -163,6 +185,63 @@ opacity: 1;
 form p {
   margin-left: 22px;
 }
+
+@media only screen and (min-width: 64.063em) { 
+  .slider-nav .slick-track:before {
+  border: 1px solid #d1d2d4;
+  width: 1.5rem;
+  display: table;
+  position: absolute;
+  left: -50px;
+  top: 30px;
+  }
+
+  .slider-nav .slick-track:after {
+  border: 1px solid #d1d2d4;
+  width: 1.5rem;
+  display: table;
+  position: absolute;
+  right: -50px;
+  top: 30px;
+  }
+
+  .slider-nav {
+    margin-bottom: 60px;
+  }
+
+  .slider-nav .slick-track {
+    margin: 0 auto;
+    transform:none !important;
+  }
+  .slick-prev:before {
+  content: url(../img/icon-prev.svg);
+  }
+
+  .slick-next:before {
+  content: url(../img/icon-next.svg);
+  }
+
+  .slick-prev {
+    left: 0px;
+  }
+  .slick-next {
+    right: 0px;
+  }
+
+  .slick-prev, .slick-next {
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-top: -25px;
+  }
+
+}
+
+.slick-center {
+  background:url(../img/icon-hover.svg);
+  background-repeat: no-repeat;
+}
+
+
 
 
 /* scroll arrow */
